@@ -5,9 +5,31 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: cursive;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.category {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  width: 250px;
+  justify-content: space-between;
+
+}
+.categoryBox {
+  width: 100px;
+  border: 2px solid blue;
+  text-decoration: none;
+  text-transform: capitalize;
+  color : blue;
+  margin: 10px;
+}
+.category_parent {
+  display: flex;
+  justify-content: center;
 }
