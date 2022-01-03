@@ -9,14 +9,17 @@ export default function CategoryItems() {
     function getProducts() {
         axios.get(`https://fakestoreapi.com/products/category/${params.categoryName}`)
             .then(result => {
-                console.log(result.data)
-                setProducts(result.data) 
+                setProducts(result.data)
             })
     }
 
     return <div className="products">
-        {product_list.map( p => {
-            <Link to={}></Link>
+        {product_list.map(p => {
+            return (<Link to={`/products/${p.id}`} className="item" key={p.id} >
+                <div className="item_img" style={{ backgroundImage: `url(${p.image})` }} alt="ImageMissing!"></div>
+                <h6 className="item_title">{p.title}</h6>
+                <span className="priceTag">{p.price}$</span>
+            </Link>);
         })}
     </div>
 }

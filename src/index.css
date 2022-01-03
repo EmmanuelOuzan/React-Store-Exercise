@@ -33,3 +33,20 @@ code {
   display: flex;
   justify-content: center;
 }
+.item {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.item_img {
+  height: 200px;
+  width: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: white;
+  background-size: contain;
+  border: 10px solid black;
+
+}
